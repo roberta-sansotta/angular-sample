@@ -17,6 +17,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PostsComponent } from './home/posts/posts.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PostDialogComponent } from './home/posts/post-dialog/post-dialog.component';
+import { ConfirmDialogComponent } from 'src/shared/components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { PostsComponent } from './home/posts/posts.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    PostsComponent
+    PostsComponent,
+    PostDialogComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { PostsComponent } from './home/posts/posts.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

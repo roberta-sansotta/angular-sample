@@ -1,0 +1,26 @@
+<h2 mat-dialog-title *ngIf="!data; else showEditTitle">Aggiungi un nuovo post</h2>
+<ng-template #showEditTitle>
+    <h2 mat-dialog-title>Modifica i dati del post</h2>
+</ng-template>
+<form [formGroup]="postForm" (ngSubmit)="onPostSubmit()">
+    <div mat-dialog-content class="dialog-form">
+        <mat-form-field appearance="outline">
+            <mat-label>Titolo</mat-label>
+            <input matInput type="text" placeholder="Inserisci il titolo" formControlName="title">
+            <mat-error *ngIf="postForm.controls.title.errors?.['required']">
+                *Campo obbligatorio
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Autore</mat-label>
+            <input matInput type="text" placeholder="Inserisci l'autore" formControlName="author">
+            <mat-error *ngIf="postForm.controls.author.errors?.['required']">
+                *Campo obbligatorio
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions class="dialog-actions">
+        <button type="button" mat-button mat-dialog-close>Annulla</button>
+        <button type="submit" mat-raised-button color="primary" [disabled]="postForm.invalid">Salva</button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+.posts-container {
+    padding: 16px;
+}
+
+.posts-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    justify-content: center;
+}
+
+.post-card {
+    margin: 16px;
+    min-width: 300px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer) {
+    margin-bottom: 16px;
+}
