@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "email": "roberta@prova.abc",
+      "password": "$2a$10$4jZpWO/Tz7tF6RGaiBJAx.5HWPGEA/XdLjSNZKjaQ1lbpzQEDM6Vu",
+      "id": 1
+    },
+    {
+      "email": "roberta@prova1.abc",
+      "password": "$2a$10$5z75hxtiHitzBHjR1p4TNOroOfIvmFuLufPdm8Ug72Qb9LfOxVbhy",
+      "id": 2
+    },
+    {
+      "email": "roberta@prova2.abc",
+      "password": "$2a$10$c9oeggATVXfKm6xlJWqR4.spszg7.KyMG2897/NJrAyPwVBWhP0ey",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

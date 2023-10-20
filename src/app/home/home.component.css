@@ -1,0 +1,21 @@
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-title {
+    margin-right: 16px;
+}
+
+.main-container {
+    height: calc(100% - 128px);
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title {
+    font-size: small;
+}

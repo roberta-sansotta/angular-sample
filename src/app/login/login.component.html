@@ -6,10 +6,10 @@
             </mat-card-title>
         </mat-card-header>
 
-        <form [formGroup]="loginForm" class="login-form">
+        <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()" class="login-form">
             <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
-                <input matInput placeholder="Inserisci l'email" formControlName="email">
+                <input matInput type="text" placeholder="Inserisci l'email" formControlName="email">
                 <mat-icon matSuffix>alternate_email</mat-icon>
                 <mat-error *ngIf="loginForm.controls.email.errors?.['email']">
                     *Email errata
@@ -20,7 +20,7 @@
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Password</mat-label>
-                <input matInput placeholder="Inserisci la password" formControlName="password">
+                <input matInput type="password" placeholder="Inserisci la password" formControlName="password">
                 <mat-icon matSuffix>lock</mat-icon>
                 <mat-error *ngIf="loginForm.controls.password.errors?.['minlength']">
                     *Lunghezza minima di 8 caratteri
@@ -30,7 +30,7 @@
                 </mat-error>
             </mat-form-field>
             <div class="login-btn">
-                <button mat-raised-button color="primary" type="submit">
+                <button type="submit" mat-raised-button [disabled]="loginForm.invalid" color="primary">
                     Accedi
                 </button>
             </div>
