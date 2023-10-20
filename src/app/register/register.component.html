@@ -1,0 +1,29 @@
+<div class="register-container">
+    <mat-card>
+        <mat-card-header class="register-header">
+            <mat-card-title>
+                Inserisci le tue nuove credenziali per registrarti
+            </mat-card-title>
+        </mat-card-header>
+        <form class="register-form">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Inserisci l'email">
+                <mat-icon matSuffix>alternate_email</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Inserisci la password">
+                <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            <div class="register-btn">
+                <a mat-button routerLink="/login">
+                    Torna al login
+                </a>
+                <button mat-raised-button color="primary" type="submit">
+                    Registrati
+                </button>
+            </div>
+        </form>
+    </mat-card>
+</div>

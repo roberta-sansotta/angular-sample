@@ -1,0 +1,26 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register-header {
+    justify-content: center;
+}
+
+.register-form {
+    padding: 16px 16px 0 16px;
+    /* padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0; */
+    display: flex;
+    flex-direction: column;
+}
+
+.register-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
